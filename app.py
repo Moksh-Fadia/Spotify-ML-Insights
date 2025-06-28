@@ -18,13 +18,13 @@ st.title("Spotify ML Project Dashboard")
 
 # --- LOAD DATA ---
 data_folder = "/Users/mokshfadia/Desktop/Data analysis projects/Spotify project" 
-spotify_df = pd.read_csv(os.path.join(data_folder, "spotify.csv"))
+spotify_df = pd.read_csv("spotify.csv")
 
 playlist_files = {
-    "High-Energy Electronic": os.path.join(data_folder, "high-energy_electronic.csv"),
-    "Chill Indie": os.path.join(data_folder, "chill_indie.csv"),
-    "Slow Sad Acoustic": os.path.join(data_folder, "slow_sad_acoustic.csv"),
-    "Danceable Pop Vibes": os.path.join(data_folder, "danceable_pop_vibes.csv")
+    "High-Energy Electronic": "high-energy_electronic.csv",
+    "Chill Indie": "chill_indie.csv",
+    "Slow Sad Acoustic": "slow_sad_acoustic.csv",
+    "Danceable Pop Vibes": "danceable_pop_vibes.csv"
 }
 
 # --- SIDEBAR NAVIGATION ---
